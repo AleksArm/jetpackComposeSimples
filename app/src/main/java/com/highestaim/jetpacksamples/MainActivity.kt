@@ -1,4 +1,4 @@
-package com.highestaim.jetpacknewsapp
+package com.highestaim.jetpacksamples
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -35,7 +35,7 @@ class MainActivity : ComponentActivity() {
                 //TextViewExample(this)
 
             }
-            Column(Modifier.fillMaxSize()) {
+            /*Column(Modifier.fillMaxSize()) {
                 val color = remember {
                     mutableStateOf(Color.Yellow)
                 }
@@ -52,7 +52,11 @@ class MainActivity : ComponentActivity() {
                         .weight(1F)
                         .fillMaxSize()
                 )
-            }
+            }*/
+
+           // SnackBarWithText()
+            //ListView()
+            Constrain()
         }
     }
 }
@@ -61,6 +65,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun DefaultPreview() {
     JetpackNewsAppTheme {
-        ColumnExample("Android")
+        Column("Android")
     }
 }
